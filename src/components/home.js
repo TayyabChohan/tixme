@@ -23,6 +23,7 @@ import business from "./assets/business.svg";
 import sport from "./assets/sport.svg";
 import foot from "./assets/food.svg";
 import art from "./assets/art.svg";
+import {Animated} from "react-animated-css";
 const Home = () => {
   return (
     <>
@@ -59,14 +60,14 @@ const Home = () => {
               <li className="nav-item d-flex align-items-center justify-content-start">
                 <a
                   className="nav-link text-primary pe-1 font-nav"
-                  href="index.html"
+                  href="/"
                 >
                   Home
                   <img className="nav-plus" src={plus} alt="" />
                 </a>
               </li>
               <li className="nav-item d-flex align-items-center justify-content-start">
-                <a className="nav-link text-primary pe-1 font-nav" href="#">
+                <a className="nav-link text-primary pe-1 font-nav" href="/events">
                   Events
                   <img className="nav-plus" src={plus} alt="" />
                 </a>
@@ -74,7 +75,7 @@ const Home = () => {
               <li className="nav-item d-flex align-items-center justify-content-start">
                 <a
                   className="nav-link text-primary pe-1 font-nav"
-                  href="about-us.html"
+                  href="/about"
                 >
                   About Us
                   <img className="nav-plus" src={plus} alt="" />
@@ -83,7 +84,7 @@ const Home = () => {
               <li className="nav-item d-flex align-items-center justify-content-start">
                 <a
                   className="nav-link text-primary pe-1 font-nav"
-                  href="contact-us.html"
+                  href="/contact"
                 >
                   Contact Us
                   <img className="nav-plus" src={plus} alt="" />
@@ -92,7 +93,7 @@ const Home = () => {
               <li className="nav-item border rounded border-primary align-self-start px-2 my-1">
                 <a
                   className="nav-link text-primary pt-1 pb-1p font-nav"
-                  href="#"
+                  href="/events"
                 >
                   List your event
                 </a>
@@ -100,7 +101,7 @@ const Home = () => {
               <li className="nav-item d-flex align-items-center justify-content-start">
                 <a
                   className="nav-link text-primary pe-1 font-nav"
-                  href="contact-us.html"
+                  href="/"
                 >
                   Login/Sign Up
                   <img className="nav-plus" src={plus} alt="" />
@@ -109,7 +110,7 @@ const Home = () => {
               <li className="nav-item d-flex align-items-center justify-content-start">
                 <a
                   className="nav-link text-primary pe-1 font-nav"
-                  href="contact-us.html"
+                  href="/"
                 >
                   Location
                   <img className="nav-plus" src={plus} alt="" />
@@ -139,20 +140,20 @@ const Home = () => {
                 <li class="nav-item d-flex align-items-center justify-content-center me-xl-5 me-3">
                   <a
                     class="nav-link text-primary pe-1 font-nav"
-                    href="index.html"
+                    href="/"
                   >
                     Home <img class="nav-plus" src={plus} alt="" />
                   </a>
                 </li>
                 <li class="nav-item d-flex align-items-center justify-content-center me-xl-5 me-3">
-                  <a class="nav-link text-primary pe-1 font-nav" href="#">
+                  <a class="nav-link text-primary pe-1 font-nav" href="/events">
                     Events <img class="nav-plus" src={plus} alt="" />
                   </a>
                 </li>
                 <li class="nav-item d-flex align-items-center justify-content-center me-xl-5 me-3">
                   <a
                     class="nav-link text-primary pe-1 font-nav"
-                    href="about-us.html"
+                    href="/about"
                   >
                     About Us
                     <img class="nav-plus" src={plus} alt="" />
@@ -161,26 +162,26 @@ const Home = () => {
                 <li class="nav-item d-flex align-items-center justify-content-center me-xl-5 me-3">
                   <a
                     class="nav-link text-primary pe-1 font-nav"
-                    href="contact-us.html"
+                    href="/contact"
                   >
                     Contact Us
                     <img class="nav-plus" src={plus} alt="" />
                   </a>
                 </li>
                 <li class="nav-item border rounded border-primary align-self-center me-7">
-                  <a class="nav-link text-primary pt-1 pb-1p font-nav" href="#">
+                  <a class="nav-link text-primary pt-1 pb-1p font-nav" href="/events">
                     List your event
                   </a>
                 </li>
                 <li class="nav-item position-absolute end-0 bg-white nav-box me-0 d-flex flex-column justify-content-center align-items-center rounded-8">
-                  <a class="nav-link text-primary pt-1 pb-1p font-nav" href="#">
+                  <a class="nav-link text-primary pt-1 pb-1p font-nav" href="/">
                     Login/Sign Up
                   </a>
                   <div class="d-flex align-items-center justify-content-center">
                     <img class="nav-loc" src={location} alt="" />
                     <a
                       class="nav-link text-primary px-1 font-nav-small"
-                      href="#"
+                      href="/"
                     >
                       Location
                       <img class="nav-plus" src={plus} alt="" />

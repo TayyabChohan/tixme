@@ -55,14 +55,14 @@ const policy = () => {
               <li class="nav-item d-flex align-items-center justify-content-start">
                 <a
                   class="nav-link text-primary pe-1 font-nav"
-                  href="index.html"
+                  href="/"
                 >
                   Home
                   <img class="nav-plus" src={plus} alt="" />
                 </a>
               </li>
               <li class="nav-item d-flex align-items-center justify-content-start">
-                <a class="nav-link text-primary pe-1 font-nav" href="#">
+                <a class="nav-link text-primary pe-1 font-nav" href="/events">
                   Events
                   <img class="nav-plus" src={plus} alt="" />
                 </a>
@@ -70,7 +70,7 @@ const policy = () => {
               <li class="nav-item d-flex align-items-center justify-content-start">
                 <a
                   class="nav-link text-primary pe-1 font-nav"
-                  href="about-us.html"
+                  href="/about"
                 >
                   About Us
                   <img class="nav-plus" src={plus} alt="" />
@@ -79,21 +79,21 @@ const policy = () => {
               <li class="nav-item d-flex align-items-center justify-content-start">
                 <a
                   class="nav-link text-primary pe-1 font-nav"
-                  href="contact-us.html"
+                  href="/contact"
                 >
                   Contact Us
                   <img class="nav-plus" src={plus} alt="" />
                 </a>
               </li>
               <li class="nav-item border rounded border-primary align-self-start px-2 my-1">
-                <a class="nav-link text-primary pt-1 pb-1p font-nav" href="#">
+                <a class="nav-link text-primary pt-1 pb-1p font-nav" href="/events">
                   List your event
                 </a>
               </li>
               <li class="nav-item d-flex align-items-center justify-content-start">
                 <a
                   class="nav-link text-primary pe-1 font-nav"
-                  href="contact-us.html"
+                  href="/"
                 >
                   Login/Sign Up
                   <img class="nav-plus" src={plus} alt="" />
@@ -102,7 +102,7 @@ const policy = () => {
               <li class="nav-item d-flex align-items-center justify-content-start">
                 <a
                   class="nav-link text-primary pe-1 font-nav"
-                  href="contact-us.html"
+                  href="/"
                 >
                   Location
                   <img class="nav-plus" src={plus} alt="" />
@@ -132,14 +132,14 @@ const policy = () => {
                 <li class="nav-item d-flex align-items-center justify-content-center me-xl-5 me-3">
                   <a
                     class="nav-link text-primary pe-1 font-nav"
-                    href="index.html"
+                    href="/"
                   >
                     Home
                     <img class="nav-plus" src={plus} alt="" />
                   </a>
                 </li>
                 <li class="nav-item d-flex align-items-center justify-content-center me-xl-5 me-3">
-                  <a class="nav-link text-primary pe-1 font-nav" href="#">
+                  <a class="nav-link text-primary pe-1 font-nav" href="/events">
                     Events
                     <img class="nav-plus" src={plus} alt="" />
                   </a>
@@ -147,7 +147,7 @@ const policy = () => {
                 <li class="nav-item d-flex align-items-center justify-content-center me-xl-5 me-3">
                   <a
                     class="nav-link text-primary pe-1 font-nav"
-                    href="about-us.html"
+                    href="/about"
                   >
                     About Us
                     <img class="nav-plus" src={plus} alt="" />
@@ -156,26 +156,26 @@ const policy = () => {
                 <li class="nav-item d-flex align-items-center justify-content-center me-xl-5 me-3">
                   <a
                     class="nav-link text-primary pe-1 font-nav"
-                    href="contact-us.html"
+                    href="/contact"
                   >
                     Contact Us
                     <img class="nav-plus" src={plus} alt="" />
                   </a>
                 </li>
                 <li class="nav-item border rounded border-primary align-self-center me-7">
-                  <a class="nav-link text-primary pt-1 pb-1p font-nav" href="#">
+                  <a class="nav-link text-primary pt-1 pb-1p font-nav" href="/events">
                     List your event
                   </a>
                 </li>
                 <li class="nav-item position-absolute end-0 bg-white nav-box me-0 d-flex flex-column justify-content-center align-items-center rounded-8">
-                  <a class="nav-link text-primary pt-1 pb-1p font-nav" href="#">
+                  <a class="nav-link text-primary pt-1 pb-1p font-nav" href="/">
                     Login/Sign Up
                   </a>
                   <div class="d-flex align-items-center justify-content-center">
                     <img class="nav-loc" src={location} alt="" />
                     <a
                       class="nav-link text-primary px-1 font-nav-small"
-                      href="#"
+                      href="/"
                     >
                       Location
                       <img class="nav-plus" src={plus} alt="" />

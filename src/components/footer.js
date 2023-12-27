@@ -36,7 +36,7 @@ const Footer = (props) => {
               <a href="#">
                 <span className="text-primary mt-3">Login</span>
               </a>
-              <a href="faqs.html">
+              <a href="/faqs">
                 <span className="text-primary mt-3">FAQ's</span>
               </a>
               <a href="#">
@@ -47,13 +47,13 @@ const Footer = (props) => {
           <div className="col-lg-2 col-12 footer-link ps-lg-0 ps-4 mt-lg-0 mt-5">
             <h6 className="fw-bold text-primary mb-0">LINKS</h6>
             <div className="ms-lg-2">
-              <a href="index.html">
+              <a href="/">
                 <span className="text-primary mt-3">Home</span>
               </a>
               <a href="#">
                 <span className="text-primary mt-3">All Events</span>
               </a>
-              <a href="about-us.html">
+              <a href="/about">
                 <span className="text-primary mt-3">About Us</span>
               </a>
               <a href="#">
@@ -64,7 +64,7 @@ const Footer = (props) => {
                 {" "}
                 <span className="text-primary mt-3">Conditions</span>
               </a>
-              <a href="privacy-policy.html">
+              <a href="/policy">
                 <span className="text-primary mt-3">Privacy Policy</span>
               </a>
             </div>
