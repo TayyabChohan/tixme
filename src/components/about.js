@@ -46,7 +46,7 @@ const About = () => {
             <ul class="navbar-nav">
               <li class="nav-item d-flex align-items-center justify-content-start">
                 <a
-                  class="nav-link text-primary pe-1 font-nav"
+                  class="nav-link text-primary-color pe-1 font-nav"
                   href="/"
                 >
                   Home
@@ -104,7 +104,7 @@ const About = () => {
           </div>
         </div>
       </nav>
-      <div class="mx-lg-4 my-lg-3 banner bg-primary rounded-8 position-relative">
+      <div class="mx-lg-4 my-lg-3 banner bg-primary-color rounded-8 position-relative">
         <nav class="navbar navbar-expand-lg navbar-white bg-white mx-4 rounded-8 top-10 d-lg-block d-none">
           <div class="container-fluid pe-0">
             <img class="nav-logo ms-lg-5 ms-2" src={Logo} alt="" />
@@ -123,7 +123,7 @@ const About = () => {
               <ul class="navbar-nav ms-auto mb-2 mb-lg-0 position-relative">
                 <li class="nav-item d-flex align-items-center justify-content-center me-xl-5 me-3">
                   <a
-                    class="nav-link text-primary pe-1 font-nav"
+                    class="nav-link text-primary-color pe-1 font-nav"
                     href="/"
                   >
                     Home
@@ -131,14 +131,14 @@ const About = () => {
                   </a>
                 </li>
                 <li class="nav-item d-flex align-items-center justify-content-center me-xl-5 me-3">
-                  <a class="nav-link text-primary pe-1 font-nav" href="events">
+                  <a class="nav-link text-primary-color pe-1 font-nav" href="events">
                     Events
                     <img class="nav-plus" src={plus} alt="" />
                   </a>
                 </li>
                 <li class="nav-item d-flex align-items-center justify-content-center me-xl-5 me-3">
                   <a
-                    class="nav-link text-primary pe-1 font-nav"
+                    class="nav-link text-primary-color pe-1 font-nav"
                     href="/about"
                   >
                     About Us
@@ -147,7 +147,7 @@ const About = () => {
                 </li>
                 <li class="nav-item d-flex align-items-center justify-content-center me-xl-5 me-3">
                   <a
-                    class="nav-link text-primary pe-1 font-nav"
+                    class="nav-link text-primary-color pe-1 font-nav"
                     href="/contact"
                   >
                     Contact Us
@@ -155,18 +155,18 @@ const About = () => {
                   </a>
                 </li>
                 <li class="nav-item border rounded border-primary align-self-center me-7">
-                  <a class="nav-link text-primary pt-1 pb-1p font-nav" href="/events">
+                  <a class="nav-link text-primary-color pt-1 pb-1p font-nav" href="/events">
                     List your event
                   </a>
                 </li>
                 <li class="nav-item position-absolute end-0 bg-white nav-box me-0 d-flex flex-column justify-content-center align-items-center rounded-8">
-                  <a class="nav-link text-primary pt-1 pb-1p font-nav" href="/">
+                  <a class="nav-link text-primary-color pt-1 pb-1p font-nav" href="/">
                     Login/Sign Up
                   </a>
                   <div class="d-flex align-items-center justify-content-center">
                     <img class="nav-loc" src={location} alt="" />
                     <a
-                      class="nav-link text-primary px-1 font-nav-small"
+                      class="nav-link text-primary-color px-1 font-nav-small"
                       href="/"
                     >
                       Location
@@ -178,7 +178,7 @@ const About = () => {
             </div>
           </div>
         </nav>
-        <h1 class="banner-h fw-bold text-white text-uppercase mb-0 pb-0">
+        <h1 class="banner-h fw-bold text-white text-uppercase mb-0 pb-0 animate__animated animate__bounce">
           ABout us
         </h1>
         <div class="banner-child bg-white px-0">
@@ -222,7 +222,7 @@ const About = () => {
           </div>
           <div class="col-lg-8">
             <div class="me-lg-4">
-              <span class="text-dark text-capitalize fw-bold">
+              <span class="text-dark text-capitalize fw-bold animate__animated animate__bounce">
                 Silver Tier:
               </span>
               <span>
@@ -257,7 +257,7 @@ const About = () => {
           </div>
           <div class="col-lg-8">
             <div class="me-lg-4">
-              <span class="text-dark text-capitalize fw-bold">
+              <span class="text-dark text-capitalize fw-bold animate__animated animate__bounce">
                 Platinum Tier :
               </span>
               <span>
@@ -276,26 +276,26 @@ const About = () => {
         <div class="row">
           <div class="col-md-4 text-center pt-4 pb-md-5 pb-0">
             <div class="border-end bottom-line border-primary pb-md-0 pb-4">
-              <h6 class="fw-bold text-primary mb-0">EVENT HOSTED</h6>
-              <p class="mb-0 fs-3 text-primary fw-bold">6067+</p>
+              <h6 class="fw-bold text-primary-color mb-0">EVENT HOSTED</h6>
+              <p class="mb-0 fs-3 text-primary-color fw-bold">6067+</p>
             </div>
           </div>
           <div class="col-md-4 text-center pt-4 pb-md-5 pb-0">
             <div class="border-end bottom-line border-primary pb-md-0 pb-4">
-              <h6 class="fw-bold text-primary mb-0">Ticket Sold</h6>
-              <p class="mb-0 fs-3 text-primary fw-bold">6067+</p>
+              <h6 class="fw-bold text-primary-color mb-0">Ticket Sold</h6>
+              <p class="mb-0 fs-3 text-primary-color fw-bold">6067+</p>
             </div>
           </div>
           <div class="col-md-4 text-center pt-4 pb-md-5 pb-0">
             <div>
-              <h6 class="fw-bold text-primary mb-0">Partners & Organizers</h6>
-              <p class="mb-0 fs-3 text-primary fw-bold">6067+</p>
+              <h6 class="fw-bold text-primary-color mb-0">Partners & Organizers</h6>
+              <p class="mb-0 fs-3 text-primary-color fw-bold">6067+</p>
             </div>
           </div>
         </div>
       </div>
       <div class="partner-sec">
-        <h3 class="fw-bold text-primary mb-0 text-center mb-0">OUR PARTNER</h3>
+        <h3 class="fw-bold text-primary-color mb-0 text-center mb-0">OUR PARTNER</h3>
         <div class="mt-lg-5 mt-4 pt-xl-5 pt-md-2 pt-5 pb-5 d-flex justify-content-center align-items-center">
           <img class="partner-img me-5" src={google} alt="" />
           <img class="partner-img me-md-5" src={airBNB} alt="" />
@@ -318,7 +318,7 @@ const About = () => {
       </div>
       <div class="newsletter-sec pb-4 position-relative">
         <div class="position-absolute md-absolute news-form">
-          <h5 class="fw-bold text-primary mb-0">
+          <h5 class="fw-bold text-primary-color mb-0">
             Want to receive events & news and updates?
           </h5>
           <div class="d-flex mt-4 flex-md-row flex-column">
@@ -346,7 +346,7 @@ const About = () => {
             />
             <label class="form-check-label" for="flexCheckDefault">
               I agree with the{" "}
-              <span class="text-primary">privacy statement</span>
+              <span class="text-primary-color">privacy statement</span>
             </label>
           </div>
           <button class="btn btn-primary text-capitalize py-0 px-0 d-flex rounded-6 align-items-center news-button">

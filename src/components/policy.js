@@ -1,28 +1,10 @@
 import React from "react";
-import dropdown from "./assets/dropdown.svg";
-import card from "./assets/card.png";
-import calendar from "./assets/calendar.svg";
-import eventLogo from "./assets/eventLogo.svg";
-import clock from "./assets/clock.svg";
-import hourglass from "./assets/hourglass.svg";
-import google from "./assets/google.svg";
-import airBNB from "./assets/airBNB.svg";
-import booking from "./assets/booking.com.svg";
-import expedia from "./assets/expedia.svg";
-import TUI from "./assets/TUI.svg";
-import arrow from "./assets/arrow.svg";
 import Logo from "./assets/Logo.svg";
 import Search from "./assets/search.png";
 import Account from "./assets/account.svg";
 import menu from "./assets/menu.svg";
 import plus from "./assets/plus.svg";
 import location from "./assets/location (5) 1.svg";
-import music from "./assets/music.svg";
-import nightlife from "./assets/nightlife.svg";
-import business from "./assets/business.svg";
-import sport from "./assets/sport.svg";
-import foot from "./assets/food.svg";
-import art from "./assets/art.svg";
 const policy = () => {
   return (
     <>
@@ -54,7 +36,7 @@ const policy = () => {
             <ul class="navbar-nav">
               <li class="nav-item d-flex align-items-center justify-content-start">
                 <a
-                  class="nav-link text-primary pe-1 font-nav"
+                  class="nav-link text-primary-color pe-1 font-nav"
                   href="/"
                 >
                   Home
@@ -62,14 +44,14 @@ const policy = () => {
                 </a>
               </li>
               <li class="nav-item d-flex align-items-center justify-content-start">
-                <a class="nav-link text-primary pe-1 font-nav" href="/events">
+                <a class="nav-link text-primary-color pe-1 font-nav" href="/events">
                   Events
                   <img class="nav-plus" src={plus} alt="" />
                 </a>
               </li>
               <li class="nav-item d-flex align-items-center justify-content-start">
                 <a
-                  class="nav-link text-primary pe-1 font-nav"
+                  class="nav-link text-primary-color pe-1 font-nav"
                   href="/about"
                 >
                   About Us
@@ -78,7 +60,7 @@ const policy = () => {
               </li>
               <li class="nav-item d-flex align-items-center justify-content-start">
                 <a
-                  class="nav-link text-primary pe-1 font-nav"
+                  class="nav-link text-primary-color pe-1 font-nav"
                   href="/contact"
                 >
                   Contact Us
@@ -86,13 +68,13 @@ const policy = () => {
                 </a>
               </li>
               <li class="nav-item border rounded border-primary align-self-start px-2 my-1">
-                <a class="nav-link text-primary pt-1 pb-1p font-nav" href="/events">
+                <a class="nav-link text-primary-color pt-1 pb-1p font-nav" href="/events">
                   List your event
                 </a>
               </li>
               <li class="nav-item d-flex align-items-center justify-content-start">
                 <a
-                  class="nav-link text-primary pe-1 font-nav"
+                  class="nav-link text-primary-color pe-1 font-nav"
                   href="/"
                 >
                   Login/Sign Up
@@ -101,7 +83,7 @@ const policy = () => {
               </li>
               <li class="nav-item d-flex align-items-center justify-content-start">
                 <a
-                  class="nav-link text-primary pe-1 font-nav"
+                  class="nav-link text-primary-color pe-1 font-nav"
                   href="/"
                 >
                   Location
@@ -112,7 +94,7 @@ const policy = () => {
           </div>
         </div>
       </nav>
-      <div class="mx-lg-4 my-lg-3 banner bg-primary rounded-8 position-relative">
+      <div class="mx-lg-4 my-lg-3 banner bg-primary-color rounded-8 position-relative">
         <nav class="navbar navbar-expand-lg navbar-white bg-white mx-4 rounded-8 top-10 d-lg-block d-none">
           <div class="container-fluid pe-0">
             <img class="nav-logo ms-lg-5 ms-2" src={Logo} alt="" />
@@ -131,7 +113,7 @@ const policy = () => {
               <ul class="navbar-nav ms-auto mb-2 mb-lg-0 position-relative">
                 <li class="nav-item d-flex align-items-center justify-content-center me-xl-5 me-3">
                   <a
-                    class="nav-link text-primary pe-1 font-nav"
+                    class="nav-link text-primary-color pe-1 font-nav"
                     href="/"
                   >
                     Home
@@ -139,14 +121,14 @@ const policy = () => {
                   </a>
                 </li>
                 <li class="nav-item d-flex align-items-center justify-content-center me-xl-5 me-3">
-                  <a class="nav-link text-primary pe-1 font-nav" href="/events">
+                  <a class="nav-link text-primary-color pe-1 font-nav" href="/events">
                     Events
                     <img class="nav-plus" src={plus} alt="" />
                   </a>
                 </li>
                 <li class="nav-item d-flex align-items-center justify-content-center me-xl-5 me-3">
                   <a
-                    class="nav-link text-primary pe-1 font-nav"
+                    class="nav-link text-primary-color pe-1 font-nav"
                     href="/about"
                   >
                     About Us
@@ -155,7 +137,7 @@ const policy = () => {
                 </li>
                 <li class="nav-item d-flex align-items-center justify-content-center me-xl-5 me-3">
                   <a
-                    class="nav-link text-primary pe-1 font-nav"
+                    class="nav-link text-primary-color pe-1 font-nav"
                     href="/contact"
                   >
                     Contact Us
@@ -163,18 +145,18 @@ const policy = () => {
                   </a>
                 </li>
                 <li class="nav-item border rounded border-primary align-self-center me-7">
-                  <a class="nav-link text-primary pt-1 pb-1p font-nav" href="/events">
+                  <a class="nav-link text-primary-color pt-1 pb-1p font-nav" href="/events">
                     List your event
                   </a>
                 </li>
                 <li class="nav-item position-absolute end-0 bg-white nav-box me-0 d-flex flex-column justify-content-center align-items-center rounded-8">
-                  <a class="nav-link text-primary pt-1 pb-1p font-nav" href="/">
+                  <a class="nav-link text-primary-color pt-1 pb-1p font-nav" href="/">
                     Login/Sign Up
                   </a>
                   <div class="d-flex align-items-center justify-content-center">
                     <img class="nav-loc" src={location} alt="" />
                     <a
-                      class="nav-link text-primary px-1 font-nav-small"
+                      class="nav-link text-primary-color px-1 font-nav-small"
                       href="/"
                     >
                       Location
@@ -186,7 +168,7 @@ const policy = () => {
             </div>
           </div>
         </nav>
-        <h1 class="banner-h text-white text-uppercase fw-bold">
+        <h1 class="banner-h text-white text-uppercase fw-bold animate__animated animate__bounce">
           Privacy policy
         </h1>
       </div>

@@ -37,7 +37,7 @@ const Faqs = () => {
             <ul className="navbar-nav">
               <li className="nav-item d-flex align-items-center justify-content-start">
                 <a
-                  className="nav-link text-primary pe-1 font-nav"
+                  className="nav-link text-primary-color pe-1 font-nav"
                   href="/"
                 >
                   Home
@@ -45,14 +45,14 @@ const Faqs = () => {
                 </a>
               </li>
               <li className="nav-item d-flex align-items-center justify-content-start">
-                <a className="nav-link text-primary pe-1 font-nav" href="/events">
+                <a className="nav-link text-primary-color pe-1 font-nav" href="/events">
                   Events
                   <img className="nav-plus" src={plus} alt="" />
                 </a>
               </li>
               <li className="nav-item d-flex align-items-center justify-content-start">
                 <a
-                  className="nav-link text-primary pe-1 font-nav"
+                  className="nav-link text-primary-color pe-1 font-nav"
                   href="/about"
                 >
                   About Us
@@ -61,7 +61,7 @@ const Faqs = () => {
               </li>
               <li className="nav-item d-flex align-items-center justify-content-start">
                 <a
-                  className="nav-link text-primary pe-1 font-nav"
+                  className="nav-link text-primary-color pe-1 font-nav"
                   href="/contact"
                 >
                   Contact Us
@@ -69,13 +69,13 @@ const Faqs = () => {
                 </a>
               </li>
               <li className="nav-item border rounded border-primary align-self-start px-2 my-1">
-                <a className="nav-link text-primary pt-1 pb-1p font-nav" href="/events">
+                <a className="nav-link text-primary-color pt-1 pb-1p font-nav" href="/events">
                   List your event
                 </a>
               </li>
               <li className="nav-item d-flex align-items-center justify-content-start">
                 <a
-                  className="nav-link text-primary pe-1 font-nav"
+                  className="nav-link text-primary-color pe-1 font-nav"
                   href="/"
                 >
                   Login/Sign Up
@@ -84,7 +84,7 @@ const Faqs = () => {
               </li>
               <li className="nav-item d-flex align-items-center justify-content-start">
                 <a
-                  className="nav-link text-primary pe-1 font-nav"
+                  className="nav-link text-primary-color pe-1 font-nav"
                   href="/"
                 >
                   Location
@@ -95,7 +95,7 @@ const Faqs = () => {
           </div>
         </div>
       </nav>
-      <div className="mx-lg-4 my-lg-3 banner bg-primary rounded-8 position-relative">
+      <div className="mx-lg-4 my-lg-3 banner bg-primary-color rounded-8 position-relative">
         <nav className="navbar navbar-expand-lg navbar-white bg-white mx-4 rounded-8 top-10 d-lg-block d-none">
           <div className="container-fluid pe-0">
             <img className="nav-logo ms-lg-5 ms-2" src={Logo} alt="" />
@@ -114,7 +114,7 @@ const Faqs = () => {
               <ul className="navbar-nav ms-auto mb-2 mb-lg-0 position-relative">
                 <li className="nav-item d-flex align-items-center justify-content-center me-xl-5 me-3">
                   <a
-                    className="nav-link text-primary pe-1 font-nav"
+                    className="nav-link text-primary-color pe-1 font-nav"
                     href="/"
                   >
                     Home
@@ -122,14 +122,14 @@ const Faqs = () => {
                   </a>
                 </li>
                 <li className="nav-item d-flex align-items-center justify-content-center me-xl-5 me-3">
-                  <a className="nav-link text-primary pe-1 font-nav" href="/events">
+                  <a className="nav-link text-primary-color pe-1 font-nav" href="/events">
                     Events
                     <img className="nav-plus" src={plus} alt="" />
                   </a>
                 </li>
                 <li className="nav-item d-flex align-items-center justify-content-center me-xl-5 me-3">
                   <a
-                    className="nav-link text-primary pe-1 font-nav"
+                    className="nav-link text-primary-color pe-1 font-nav"
                     href="/about"
                   >
                     About Us
@@ -138,7 +138,7 @@ const Faqs = () => {
                 </li>
                 <li className="nav-item d-flex align-items-center justify-content-center me-xl-5 me-3">
                   <a
-                    className="nav-link text-primary pe-1 font-nav"
+                    className="nav-link text-primary-color pe-1 font-nav"
                     href="/contact"
                   >
                     Contact Us
@@ -146,18 +146,18 @@ const Faqs = () => {
                   </a>
                 </li>
                 <li className="nav-item border rounded border-primary align-self-center me-7">
-                  <a className="nav-link text-primary pt-1 pb-1p font-nav" href="/events">
+                  <a className="nav-link text-primary-color pt-1 pb-1p font-nav" href="/events">
                     List your event
                   </a>
                 </li>
                 <li className="nav-item position-absolute end-0 bg-white nav-box me-0 d-flex flex-column justify-content-center align-items-center rounded-8">
-                  <a className="nav-link text-primary pt-1 pb-1p font-nav" href="/">
+                  <a className="nav-link text-primary-color pt-1 pb-1p font-nav" href="/">
                     Login/Sign Up
                   </a>
                   <div className="d-flex align-items-center justify-content-center">
                     <img className="nav-loc" src={location} alt="" />
                     <a
-                      className="nav-link text-primary px-1 font-nav-small"
+                      className="nav-link text-primary-color px-1 font-nav-small"
                       href="/"
                     >
                       Location
@@ -169,7 +169,7 @@ const Faqs = () => {
             </div>
           </div>
         </nav>
-        <h1 className="banner-h text-white text-uppercase fw-bold mb-0 pb-0">
+        <h1 className="banner-h text-white text-uppercase fw-bold mb-0 pb-0 animate__animated animate__bounce">
           FAQ’s
         </h1>
         <div className="banner-child bg-white">
@@ -326,7 +326,7 @@ const Faqs = () => {
       <div style={{ height: "150px" }}></div>
       <div className="newsletter-sec pb-4 position-relative">
         <div className="position-absolute md-absolute news-form">
-          <h5 className="fw-bold text-primary mb-0">
+          <h5 className="fw-bold text-primary-color mb-0">
             Want to receive events & news and updates?
           </h5>
           <div className="d-flex mt-4 flex-md-row flex-column">
@@ -354,7 +354,7 @@ const Faqs = () => {
             />
             <label className="form-check-label" for="flexCheckDefault">
               I agree with the{" "}
-              <span className="text-primary">privacy statement</span>
+              <span className="text-primary-color">privacy statement</span>
             </label>
           </div>
           <button className="btn btn-primary text-capitalize py-0 px-0 d-flex rounded-6 align-items-center news-button">

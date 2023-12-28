@@ -3,6 +3,10 @@ import ReactDOM from 'react-dom/client';
 import App from './App';
 import './index.css';
 import 'bootstrap/dist/css/bootstrap.css';
+import 'animate.css';
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/pagination';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

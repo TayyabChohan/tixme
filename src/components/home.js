@@ -18,12 +18,7 @@ import menu from "./assets/menu.svg";
 import plus from "./assets/plus.svg";
 import location from "./assets/location (5) 1.svg";
 import music from "./assets/music.svg";
-import nightlife from "./assets/nightlife.svg";
-import business from "./assets/business.svg";
-import sport from "./assets/sport.svg";
-import foot from "./assets/food.svg";
-import art from "./assets/art.svg";
-import {Animated} from "react-animated-css";
+import { Swiper, SwiperSlide } from 'swiper/react';
 const Home = () => {
   return (
     <>
@@ -39,7 +34,7 @@ const Home = () => {
             />
             <img className="m-account me-md-3 me-2" src={Account} alt="" />
             <button
-              className="navbar-toggler"
+              className="navbar-toggler "
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#navbarSupportedContent"
@@ -59,7 +54,7 @@ const Home = () => {
             <ul className="navbar-nav">
               <li className="nav-item d-flex align-items-center justify-content-start">
                 <a
-                  className="nav-link text-primary pe-1 font-nav"
+                  className="nav-link text-primary-color pe-1 font-nav"
                   href="/"
                 >
                   Home
@@ -67,14 +62,14 @@ const Home = () => {
                 </a>
               </li>
               <li className="nav-item d-flex align-items-center justify-content-start">
-                <a className="nav-link text-primary pe-1 font-nav" href="/events">
+                <a className="nav-link text-primary-color pe-1 font-nav" href="/events">
                   Events
                   <img className="nav-plus" src={plus} alt="" />
                 </a>
               </li>
               <li className="nav-item d-flex align-items-center justify-content-start">
                 <a
-                  className="nav-link text-primary pe-1 font-nav"
+                  className="nav-link text-primary-color pe-1 font-nav"
                   href="/about"
                 >
                   About Us
@@ -83,7 +78,7 @@ const Home = () => {
               </li>
               <li className="nav-item d-flex align-items-center justify-content-start">
                 <a
-                  className="nav-link text-primary pe-1 font-nav"
+                  className="nav-link text-primary-color pe-1 font-nav"
                   href="/contact"
                 >
                   Contact Us
@@ -92,7 +87,7 @@ const Home = () => {
               </li>
               <li className="nav-item border rounded border-primary align-self-start px-2 my-1">
                 <a
-                  className="nav-link text-primary pt-1 pb-1p font-nav"
+                  className="nav-link text-primary-color pt-1 pb-1p font-nav"
                   href="/events"
                 >
                   List your event
@@ -100,7 +95,7 @@ const Home = () => {
               </li>
               <li className="nav-item d-flex align-items-center justify-content-start">
                 <a
-                  className="nav-link text-primary pe-1 font-nav"
+                  className="nav-link text-primary-color pe-1 font-nav"
                   href="/"
                 >
                   Login/Sign Up
@@ -109,7 +104,7 @@ const Home = () => {
               </li>
               <li className="nav-item d-flex align-items-center justify-content-start">
                 <a
-                  className="nav-link text-primary pe-1 font-nav"
+                  className="nav-link text-primary-color pe-1 font-nav"
                   href="/"
                 >
                   Location
@@ -120,12 +115,12 @@ const Home = () => {
           </div>
         </div>
       </nav>
-      <div class="mx-lg-4 my-lg-3 banner bg-primary rounded-8 position-relative">
-        <nav class="navbar navbar-expand-lg navbar-white bg-white mx-4 rounded-8 top-10 d-lg-block d-none">
-          <div class="container-fluid pe-0">
-            <img class="nav-logo ms-lg-5 ms-2" src={Logo} alt="" />
+      <div className ="mx-lg-4 my-lg-3 banner bg-primary-color rounded-8 position-relative">
+        <nav className ="navbar navbar-expand-lg navbar-white bg-white mx-4 rounded-8 top-10 d-lg-block d-none">
+          <div className ="container-fluid pe-0">
+            <img className ="nav-logo ms-lg-5 ms-2" src={Logo} alt="" />
             <button
-              class="navbar-toggler"
+              className ="navbar-toggler"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#navbarSupportedContent"
@@ -133,58 +128,58 @@ const Home = () => {
               aria-expanded="false"
               aria-label="Toggle navigation"
             >
-              <span class="navbar-toggler-icon"></span>
+              <span className ="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav ms-auto mb-2 mb-lg-0 position-relative">
-                <li class="nav-item d-flex align-items-center justify-content-center me-xl-5 me-3">
+            <div className ="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul className ="navbar-nav ms-auto mb-2 mb-lg-0 position-relative">
+                <li className ="nav-item d-flex align-items-center justify-content-center me-xl-5 me-3">
                   <a
-                    class="nav-link text-primary pe-1 font-nav"
+                    className ="nav-link text-primary-color pe-1 font-nav"
                     href="/"
                   >
-                    Home <img class="nav-plus" src={plus} alt="" />
+                    Home <img className ="nav-plus" src={plus} alt="" />
                   </a>
                 </li>
-                <li class="nav-item d-flex align-items-center justify-content-center me-xl-5 me-3">
-                  <a class="nav-link text-primary pe-1 font-nav" href="/events">
-                    Events <img class="nav-plus" src={plus} alt="" />
+                <li className ="nav-item d-flex align-items-center justify-content-center me-xl-5 me-3">
+                  <a className ="nav-link text-primary-color pe-1 font-nav" href="/events">
+                    Events <img className ="nav-plus" src={plus} alt="" />
                   </a>
                 </li>
-                <li class="nav-item d-flex align-items-center justify-content-center me-xl-5 me-3">
+                <li className ="nav-item d-flex align-items-center justify-content-center me-xl-5 me-3">
                   <a
-                    class="nav-link text-primary pe-1 font-nav"
+                    className ="nav-link text-primary-color pe-1 font-nav"
                     href="/about"
                   >
                     About Us
-                    <img class="nav-plus" src={plus} alt="" />
+                    <img className ="nav-plus" src={plus} alt="" />
                   </a>
                 </li>
-                <li class="nav-item d-flex align-items-center justify-content-center me-xl-5 me-3">
+                <li className ="nav-item d-flex align-items-center justify-content-center me-xl-5 me-3">
                   <a
-                    class="nav-link text-primary pe-1 font-nav"
+                    className ="nav-link text-primary-color pe-1 font-nav"
                     href="/contact"
                   >
                     Contact Us
-                    <img class="nav-plus" src={plus} alt="" />
+                    <img className ="nav-plus" src={plus} alt="" />
                   </a>
                 </li>
-                <li class="nav-item border rounded border-primary align-self-center me-7">
-                  <a class="nav-link text-primary pt-1 pb-1p font-nav" href="/events">
+                <li className ="nav-item border rounded border-primary align-self-center me-7">
+                  <a className ="nav-link text-primary-color pt-1 pb-1p font-nav" href="/events">
                     List your event
                   </a>
                 </li>
-                <li class="nav-item position-absolute end-0 bg-white nav-box me-0 d-flex flex-column justify-content-center align-items-center rounded-8">
-                  <a class="nav-link text-primary pt-1 pb-1p font-nav" href="/">
+                <li className ="nav-item position-absolute end-0 bg-white nav-box me-0 d-flex flex-column justify-content-center align-items-center rounded-8">
+                  <a className ="nav-link text-primary-color pt-1 pb-1p font-nav" href="/">
                     Login/Sign Up
                   </a>
-                  <div class="d-flex align-items-center justify-content-center">
-                    <img class="nav-loc" src={location} alt="" />
+                  <div className ="d-flex align-items-center justify-content-center">
+                    <img className ="nav-loc" src={location} alt="" />
                     <a
-                      class="nav-link text-primary px-1 font-nav-small"
+                      className ="nav-link text-primary-color px-1 font-nav-small"
                       href="/"
                     >
                       Location
-                      <img class="nav-plus" src={plus} alt="" />
+                      <img className ="nav-plus" src={plus} alt="" />
                     </a>
                   </div>
                 </li>
@@ -192,17 +187,17 @@ const Home = () => {
             </div>
           </div>
         </nav>
-        <h1 class="banner-h text-white text-uppercase">Beyond Tickets :</h1>
-        <h3 class="banner-h2 text-white rounded-8 px-4 py-3">
+        <h1 className ="banner-h text-white text-uppercase">Beyond Tickets :</h1>
+        <h3 className ="banner-h2 text-white rounded-8 px-4 py-3 animate__animated animate__bounce">
           Your Passport to Eventful Experiences
         </h3>
-        <div class="banner-child bg-white">
-          <h5 class="text-primary fw-bold space-sec pt-4">
+        <div className ="banner-child bg-white">
+          <h5 className ="text-primary-color fw-bold space-sec pt-4 animate__animated animate__bounce">
             Find Near By Events
           </h5>
-          <div class="d-flex space-sec2 flex-lg-row flex-column mt-lg-0 mt-3">
+          <div className ="d-flex space-sec2 flex-lg-row flex-column mt-lg-0 mt-3">
             <select
-              class="form-select category me-4"
+              className ="form-select category me-4"
               aria-label="Default select example"
             >
               <option>Category</option>
@@ -213,54 +208,98 @@ const Home = () => {
             <input
               type="search"
               id="form1"
-              class="form-control border-b5 mt-lg-0 mt-3"
+              className ="form-control border-b5 mt-lg-0 mt-3"
               placeholder="Search anything"
             />
           </div>
-          <div class="row mx-lg-3 mx-1 mb-4 mt-4 gx-md-4 gx-2">
-            <div class="col-xl-2 col-4 text-center position-relative">
-              <div class="event-card pt-4">
-                <img class="event-img" src={music} alt="" />
-                <small class="d-block text-primary my-2 mt-3"> Music </small>
+          <div className="row mx-lg-3 mx-1 mb-4 mt-4 gx-md-4 gx-2">
+            <div>
+            <Swiper
+        slidesPerView={2}
+        spaceBetween={30}
+        breakpoints={{
+          992: {
+            slidesPerView: 6,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+          },
+          480: {
+            slidesPerView: 2,
+            spaceBetween: 10,
+          },
+        }}
+        className="mySwiper"
+      >
+        <SwiperSlide>
+        <div className ="text-center position-relative">
+              <div className ="event-card pt-4">
+                <img className ="event-img  animate__animated animate__bounce" src={music} alt="" />
+                <small className ="d-block text-card-color my-2 mt-3"> Music </small>
               </div>
-              <div class="fade-effect"></div>
+              <div className ="fade-effect"></div>
             </div>
-            <div class="col-xl-2 col-4 text-center position-relative">
-              <div class="event-card pt-4">
-                <img class="event-img" src={nightlife} alt="" />
-                <small class="d-block text-primary my-2 mt-3"> Music </small>
+        </SwiperSlide>
+        <SwiperSlide>
+        <div className =" text-center position-relative">
+              <div className ="event-card pt-4">
+               <img className ="event-img  animate__animated animate__bounce" src={music} alt="" />
+                <small className ="d-block text-card-color my-2 mt-3"> Music </small>
               </div>
-              <div class="fade-effect"></div>
+              <div className ="fade-effect"></div>
             </div>
-            <div class="col-xl-2 col-4 text-center position-relative">
-              <div class="event-card pt-4">
-                <img class="event-img" src={business} alt="" />
-                <small class="d-block text-primary my-2 mt-3"> Music </small>
+        </SwiperSlide>
+        <SwiperSlide>
+        <div className ="text-center position-relative">
+              <div className ="event-card pt-4">
+               <img className ="event-img  animate__animated animate__bounce" src={music} alt="" />
+                <small className ="d-block text-card-color my-2 mt-3"> Music </small>
               </div>
-              <div class="fade-effect"></div>
+              <div className ="fade-effect"></div>
             </div>
-            <div class="col-xl-2 col-4 text-center position-relative d-xl-block d-none">
-              <div class="event-card pt-4">
-                <img class="event-img" src={sport} alt="" />
-                <small class="d-block text-primary my-2 mt-3"> Music </small>
+        </SwiperSlide>
+        <SwiperSlide>
+        <div className ="text-center position-relative">
+              <div className ="event-card pt-4">
+               <img className ="event-img  animate__animated animate__bounce" src={music} alt="" />
+                <small className ="d-block text-card-color my-2 mt-3"> Music </small>
               </div>
-              <div class="fade-effect"></div>
+              <div className ="fade-effect"></div>
             </div>
-            <div class="col-xl-2 col-4 text-center position-relative d-xl-block d-none">
-              <div class="event-card pt-4">
-                <img class="event-img" src={foot} alt="" />
-                <small class="d-block text-primary my-2 mt-3"> Music </small>
+        </SwiperSlide>
+        <SwiperSlide>
+        <div className ="text-center position-relative">
+              <div className ="event-card pt-4">
+                <img className ="event-img " src={music} alt="" />
+                <small className ="d-block text-card-color my-2 mt-3"> Music </small>
               </div>
-              <div class="fade-effect"></div>
+              <div className ="fade-effect"></div>
             </div>
-            <div class="col-xl-2 col-4 text-center position-relative d-xl-block d-none">
-              <div class="event-card pt-4">
-                <img class="event-img" src={art} alt="" />
-                <small class="d-block text-primary my-2 mt-3"> Music </small>
+        </SwiperSlide>
+        <SwiperSlide>
+        <div className ="text-center position-relative">
+              <div className ="event-card pt-4">
+               <img className ="event-img  animate__animated animate__bounce" src={music} alt="" />
+                <small className ="d-block text-card-color my-2 mt-3"> Music </small>
               </div>
-              <div class="fade-effect"></div>
+              <div className ="fade-effect"></div>
+            </div>
+        </SwiperSlide>
+        <SwiperSlide>
+        <div className ="text-center position-relative">
+              <div className ="event-card pt-4">
+               <img className ="event-img  animate__animated animate__bounce" src={music} alt="" />
+                <small className ="d-block text-card-color my-2 mt-3"> Music </small>
+              </div>
+              <div className ="fade-effect"></div>
+            </div>
+        </SwiperSlide>
+      </Swiper>
             </div>
           </div>
+        
         </div>
       </div>
       <div className="event-sec mx-4">
@@ -268,16 +307,16 @@ const Home = () => {
           <h5 className="event-h fw-bold mx-head pt-4 me-4">Events In</h5>
           <div className="d-flex align-items-center justify-content-start ms-2 border-bttom-dotted">
             <img className="nav-plus pt-1 mt-2 me-2" src={dropdown} alt="" />
-            <h5 className="text-primary fw-bold pt-4 me-4 mb-1">Boston</h5>
+            <h5 className="text-primary-color fw-bold pt-4 me-4 mb-1">Boston</h5>
           </div>
         </div>
-        <div className="row px-0 mt-lg-5 mt-2 gx-lg-5 gy-4 mx-cards">
+        <div className="row px-0 mt-lg-5 mt-2 gx-lg-5 gy-4 mx-cards my-margen">
           <div className="col-xl-4 col-md-6 col-12">
             <div className="bg-white rounded-10 shadow-bottom">
               <img className="event-card-img" src={card} alt="" />
               <div className="d-flex align-items-center justify-content-end mt-n4 me-3">
                 <img className="card-icon me-2" src={calendar} alt="" />
-                <p className="text-primary fw-bold me-lg-4 me-lg-3 me-0 mb-0 mt-md-0">
+                <p className="text-primary-color fw-bold me-lg-4 me-lg-3 me-0 mb-0 mt-md-0">
                   26 Jan
                 </p>
               </div>
@@ -285,7 +324,7 @@ const Home = () => {
                 <img className="card-icon-logo me-2" src={eventLogo} alt="" />
                 <div className="d-flex flex-column align-items-start justify-content-start">
                   <small className="small mb-0">Originated by</small>
-                  <p className="text-primary fw-bold me-lg-4 me-lg-3 me-1 mb-0 mt-n1">
+                  <p className="text-primary-color fw-bold me-lg-4 me-lg-3 me-1 mb-0 mt-n1">
                     By KING
                   </p>
                 </div>
@@ -293,7 +332,7 @@ const Home = () => {
               <div className="d-flex justify-content-between">
                 <div className="d-flex align-items-center justify-content-start me-3 ms-3 my-2">
                   <img className="card-icon me-1" src={location} alt="" />
-                  <p className="text-primary fw-bold me-lg-4 me-lg-3 me-1 mb-0">
+                  <p className="text-primary-color fw-bold me-lg-4 me-lg-3 me-1 mb-0">
                     Wilton , United States
                   </p>
                 </div>
@@ -303,7 +342,7 @@ const Home = () => {
                     <p className="text-dark fw-bold mb-0 pb-0 line-through me-1">
                       $100
                     </p>
-                    <p className="text-primary fw-bold me-lg-4 me-lg-3 me-1 mb-0 price">
+                    <p className="text-primary-color fw-bold me-lg-4 me-lg-3 me-1 mb-0 price">
                       $95
                     </p>
                   </div>
@@ -316,7 +355,7 @@ const Home = () => {
                 >
                   <img className="card-icon2 me-2" src={clock} alt="" />
                   <div>
-                    <p className="small text-primary fw-bold mb-0 pb-0">
+                    <p className="small text-primary-color fw-bold mb-0 pb-0">
                       Event Time
                     </p>
                     <p className="small mb-0">07: 00 PM</p>
@@ -328,7 +367,7 @@ const Home = () => {
                 >
                   <img className="card-icon2 me-2" src={hourglass} alt="" />
                   <div>
-                    <p className="small text-primary fw-bold mb-0 pb-0">
+                    <p className="small text-primary-color fw-bold mb-0 pb-0">
                       Event Duration
                     </p>
                     <p className="small mb-0">2Hr 11Min</p>
@@ -347,7 +386,7 @@ const Home = () => {
               <img className="event-card-img" src={card} alt="" />
               <div className="d-flex align-items-center justify-content-end mt-n4 me-3">
                 <img className="card-icon me-2" src={calendar} alt="" />
-                <p className="text-primary fw-bold me-lg-4 me-lg-3 me-0 mb-0 mt-md-0">
+                <p className="text-primary-color fw-bold me-lg-4 me-lg-3 me-0 mb-0 mt-md-0">
                   26 Jan
                 </p>
               </div>
@@ -355,7 +394,7 @@ const Home = () => {
                 <img className="card-icon-logo me-2" src={eventLogo} alt="" />
                 <div className="d-flex flex-column align-items-start justify-content-start">
                   <small className="small mb-0">Originated by</small>
-                  <p className="text-primary fw-bold me-lg-4 me-lg-3 me-1 mb-0 mt-n1">
+                  <p className="text-primary-color fw-bold me-lg-4 me-lg-3 me-1 mb-0 mt-n1">
                     By KING
                   </p>
                 </div>
@@ -363,7 +402,7 @@ const Home = () => {
               <div className="d-flex justify-content-between">
                 <div className="d-flex align-items-center justify-content-start me-3 ms-3 my-2">
                   <img className="card-icon me-1" src={location} alt="" />
-                  <p className="text-primary fw-bold me-lg-4 me-lg-3 me-1 mb-0">
+                  <p className="text-primary-color fw-bold me-lg-4 me-lg-3 me-1 mb-0">
                     Wilton , United States
                   </p>
                 </div>
@@ -373,7 +412,7 @@ const Home = () => {
                     <p className="text-dark fw-bold mb-0 pb-0 line-through me-1">
                       $100
                     </p>
-                    <p className="text-primary fw-bold me-lg-4 me-lg-3 me-1 mb-0 price">
+                    <p className="text-primary-color fw-bold me-lg-4 me-lg-3 me-1 mb-0 price">
                       $95
                     </p>
                   </div>
@@ -384,13 +423,9 @@ const Home = () => {
                   className="d-flex align-items-center justify-content-start w-origin ms-3 pb-2 border-end pe-3"
                   style={{ flexShrink: 0, width: "auto" }}
                 >
-                  <img
-                    className="card-icon2 me-2"
-                    src="./assets/clock.svg"
-                    alt=""
-                  />
+                  <img className="card-icon2 me-2" src={clock} alt="" />
                   <div>
-                    <p className="small text-primary fw-bold mb-0 pb-0">
+                    <p className="small text-primary-color fw-bold mb-0 pb-0">
                       Event Time
                     </p>
                     <p className="small mb-0">07: 00 PM</p>
@@ -400,13 +435,9 @@ const Home = () => {
                   className="d-flex align-items-center justify-content-start w-origin ms-3 pb-2"
                   style={{ flexShrink: 0, width: "auto" }}
                 >
-                  <img
-                    className="card-icon2 me-2"
-                    src="./assets/hourglass.svg"
-                    alt=""
-                  />
+                  <img className="card-icon2 me-2" src={hourglass} alt="" />
                   <div>
-                    <p className="small text-primary fw-bold mb-0 pb-0">
+                    <p className="small text-primary-color fw-bold mb-0 pb-0">
                       Event Duration
                     </p>
                     <p className="small mb-0">2Hr 11Min</p>
@@ -425,7 +456,7 @@ const Home = () => {
               <img className="event-card-img" src={card} alt="" />
               <div className="d-flex align-items-center justify-content-end mt-n4 me-3">
                 <img className="card-icon me-2" src={calendar} alt="" />
-                <p className="text-primary fw-bold me-lg-4 me-lg-3 me-0 mb-0 mt-md-0">
+                <p className="text-primary-color fw-bold me-lg-4 me-lg-3 me-0 mb-0 mt-md-0">
                   26 Jan
                 </p>
               </div>
@@ -433,7 +464,7 @@ const Home = () => {
                 <img className="card-icon-logo me-2" src={eventLogo} alt="" />
                 <div className="d-flex flex-column align-items-start justify-content-start">
                   <small className="small mb-0">Originated by</small>
-                  <p className="text-primary fw-bold me-lg-4 me-lg-3 me-1 mb-0 mt-n1">
+                  <p className="text-primary-color fw-bold me-lg-4 me-lg-3 me-1 mb-0 mt-n1">
                     By KING
                   </p>
                 </div>
@@ -441,7 +472,7 @@ const Home = () => {
               <div className="d-flex justify-content-between">
                 <div className="d-flex align-items-center justify-content-start me-3 ms-3 my-2">
                   <img className="card-icon me-1" src={location} alt="" />
-                  <p className="text-primary fw-bold me-lg-4 me-lg-3 me-1 mb-0">
+                  <p className="text-primary-color fw-bold me-lg-4 me-lg-3 me-1 mb-0">
                     Wilton , United States
                   </p>
                 </div>
@@ -451,7 +482,7 @@ const Home = () => {
                     <p className="text-dark fw-bold mb-0 pb-0 line-through me-1">
                       $100
                     </p>
-                    <p className="text-primary fw-bold me-lg-4 me-lg-3 me-1 mb-0 price">
+                    <p className="text-primary-color fw-bold me-lg-4 me-lg-3 me-1 mb-0 price">
                       $95
                     </p>
                   </div>
@@ -462,13 +493,9 @@ const Home = () => {
                   className="d-flex align-items-center justify-content-start w-origin ms-3 pb-2 border-end pe-3"
                   style={{ flexShrink: 0, width: "auto" }}
                 >
-                  <img
-                    className="card-icon2 me-2"
-                    src="./assets/clock.svg"
-                    alt=""
-                  />
+                  <img className="card-icon2 me-2" src={clock} alt="" />
                   <div>
-                    <p className="small text-primary fw-bold mb-0 pb-0">
+                    <p className="small text-primary-color fw-bold mb-0 pb-0">
                       Event Time
                     </p>
                     <p className="small mb-0">07: 00 PM</p>
@@ -478,13 +505,9 @@ const Home = () => {
                   className="d-flex align-items-center justify-content-start w-origin ms-3 pb-2"
                   style={{ flexShrink: 0, width: "auto" }}
                 >
-                  <img
-                    className="card-icon2 me-2"
-                    src="./assets/hourglass.svg"
-                    alt=""
-                  />
+                  <img className="card-icon2 me-2" src={hourglass} alt="" />
                   <div>
-                    <p className="small text-primary fw-bold mb-0 pb-0">
+                    <p className="small text-primary-color fw-bold mb-0 pb-0">
                       Event Duration
                     </p>
                     <p className="small mb-0">2Hr 11Min</p>
@@ -503,7 +526,7 @@ const Home = () => {
               <img className="event-card-img" src={card} alt="" />
               <div className="d-flex align-items-center justify-content-end mt-n4 me-3">
                 <img className="card-icon me-2" src={calendar} alt="" />
-                <p className="text-primary fw-bold me-lg-4 me-lg-3 me-0 mb-0 mt-md-0">
+                <p className="text-primary-color fw-bold me-lg-4 me-lg-3 me-0 mb-0 mt-md-0">
                   26 Jan
                 </p>
               </div>
@@ -511,7 +534,7 @@ const Home = () => {
                 <img className="card-icon-logo me-2" src={eventLogo} alt="" />
                 <div className="d-flex flex-column align-items-start justify-content-start">
                   <small className="small mb-0">Originated by</small>
-                  <p className="text-primary fw-bold me-lg-4 me-lg-3 me-1 mb-0 mt-n1">
+                  <p className="text-primary-color fw-bold me-lg-4 me-lg-3 me-1 mb-0 mt-n1">
                     By KING
                   </p>
                 </div>
@@ -519,7 +542,7 @@ const Home = () => {
               <div className="d-flex justify-content-between">
                 <div className="d-flex align-items-center justify-content-start me-3 ms-3 my-2">
                   <img className="card-icon me-1" src={location} alt="" />
-                  <p className="text-primary fw-bold me-lg-4 me-lg-3 me-1 mb-0">
+                  <p className="text-primary-color fw-bold me-lg-4 me-lg-3 me-1 mb-0">
                     Wilton , United States
                   </p>
                 </div>
@@ -529,7 +552,7 @@ const Home = () => {
                     <p className="text-dark fw-bold mb-0 pb-0 line-through me-1">
                       $100
                     </p>
-                    <p className="text-primary fw-bold me-lg-4 me-lg-3 me-1 mb-0 price">
+                    <p className="text-primary-color fw-bold me-lg-4 me-lg-3 me-1 mb-0 price">
                       $95
                     </p>
                   </div>
@@ -540,13 +563,9 @@ const Home = () => {
                   className="d-flex align-items-center justify-content-start w-origin ms-3 pb-2 border-end pe-3"
                   style={{ flexShrink: 0, width: "auto" }}
                 >
-                  <img
-                    className="card-icon2 me-2"
-                    src="./assets/clock.svg"
-                    alt=""
-                  />
+                  <img className="card-icon2 me-2" src={clock} alt="" />
                   <div>
-                    <p className="small text-primary fw-bold mb-0 pb-0">
+                    <p className="small text-primary-color fw-bold mb-0 pb-0">
                       Event Time
                     </p>
                     <p className="small mb-0">07: 00 PM</p>
@@ -556,13 +575,9 @@ const Home = () => {
                   className="d-flex align-items-center justify-content-start w-origin ms-3 pb-2"
                   style={{ flexShrink: 0, width: "auto" }}
                 >
-                  <img
-                    className="card-icon2 me-2"
-                    src="./assets/hourglass.svg"
-                    alt=""
-                  />
+                  <img className="card-icon2 me-2" src={hourglass} alt="" />
                   <div>
-                    <p className="small text-primary fw-bold mb-0 pb-0">
+                    <p className="small text-primary-color fw-bold mb-0 pb-0">
                       Event Duration
                     </p>
                     <p className="small mb-0">2Hr 11Min</p>
@@ -581,7 +596,7 @@ const Home = () => {
               <img className="event-card-img" src={card} alt="" />
               <div className="d-flex align-items-center justify-content-end mt-n4 me-3">
                 <img className="card-icon me-2" src={calendar} alt="" />
-                <p className="text-primary fw-bold me-lg-4 me-lg-3 me-0 mb-0 mt-md-0">
+                <p className="text-primary-color fw-bold me-lg-4 me-lg-3 me-0 mb-0 mt-md-0">
                   26 Jan
                 </p>
               </div>
@@ -589,7 +604,7 @@ const Home = () => {
                 <img className="card-icon-logo me-2" src={eventLogo} alt="" />
                 <div className="d-flex flex-column align-items-start justify-content-start">
                   <small className="small mb-0">Originated by</small>
-                  <p className="text-primary fw-bold me-lg-4 me-lg-3 me-1 mb-0 mt-n1">
+                  <p className="text-primary-color fw-bold me-lg-4 me-lg-3 me-1 mb-0 mt-n1">
                     By KING
                   </p>
                 </div>
@@ -597,7 +612,7 @@ const Home = () => {
               <div className="d-flex justify-content-between">
                 <div className="d-flex align-items-center justify-content-start me-3 ms-3 my-2">
                   <img className="card-icon me-1" src={location} alt="" />
-                  <p className="text-primary fw-bold me-lg-4 me-lg-3 me-1 mb-0">
+                  <p className="text-primary-color fw-bold me-lg-4 me-lg-3 me-1 mb-0">
                     Wilton , United States
                   </p>
                 </div>
@@ -607,7 +622,7 @@ const Home = () => {
                     <p className="text-dark fw-bold mb-0 pb-0 line-through me-1">
                       $100
                     </p>
-                    <p className="text-primary fw-bold me-lg-4 me-lg-3 me-1 mb-0 price">
+                    <p className="text-primary-color fw-bold me-lg-4 me-lg-3 me-1 mb-0 price">
                       $95
                     </p>
                   </div>
@@ -618,13 +633,9 @@ const Home = () => {
                   className="d-flex align-items-center justify-content-start w-origin ms-3 pb-2 border-end pe-3"
                   style={{ flexShrink: 0, width: "auto" }}
                 >
-                  <img
-                    className="card-icon2 me-2"
-                    src="./assets/clock.svg"
-                    alt=""
-                  />
+                  <img className="card-icon2 me-2" src={clock} alt="" />
                   <div>
-                    <p className="small text-primary fw-bold mb-0 pb-0">
+                    <p className="small text-primary-color fw-bold mb-0 pb-0">
                       Event Time
                     </p>
                     <p className="small mb-0">07: 00 PM</p>
@@ -634,13 +645,9 @@ const Home = () => {
                   className="d-flex align-items-center justify-content-start w-origin ms-3 pb-2"
                   style={{ flexShrink: 0, width: "auto" }}
                 >
-                  <img
-                    className="card-icon2 me-2"
-                    src="./assets/hourglass.svg"
-                    alt=""
-                  />
+                  <img className="card-icon2 me-2" src={hourglass} alt="" />
                   <div>
-                    <p className="small text-primary fw-bold mb-0 pb-0">
+                    <p className="small text-primary-color fw-bold mb-0 pb-0">
                       Event Duration
                     </p>
                     <p className="small mb-0">2Hr 11Min</p>
@@ -659,7 +666,7 @@ const Home = () => {
               <img className="event-card-img" src={card} alt="" />
               <div className="d-flex align-items-center justify-content-end mt-n4 me-3">
                 <img className="card-icon me-2" src={calendar} alt="" />
-                <p className="text-primary fw-bold me-lg-4 me-lg-3 me-0 mb-0 mt-md-0">
+                <p className="text-primary-color fw-bold me-lg-4 me-lg-3 me-0 mb-0 mt-md-0">
                   26 Jan
                 </p>
               </div>
@@ -667,7 +674,7 @@ const Home = () => {
                 <img className="card-icon-logo me-2" src={eventLogo} alt="" />
                 <div className="d-flex flex-column align-items-start justify-content-start">
                   <small className="small mb-0">Originated by</small>
-                  <p className="text-primary fw-bold me-lg-4 me-lg-3 me-1 mb-0 mt-n1">
+                  <p className="text-primary-color fw-bold me-lg-4 me-lg-3 me-1 mb-0 mt-n1">
                     By KING
                   </p>
                 </div>
@@ -675,7 +682,7 @@ const Home = () => {
               <div className="d-flex justify-content-between">
                 <div className="d-flex align-items-center justify-content-start me-3 ms-3 my-2">
                   <img className="card-icon me-1" src={location} alt="" />
-                  <p className="text-primary fw-bold me-lg-4 me-lg-3 me-1 mb-0">
+                  <p className="text-primary-color fw-bold me-lg-4 me-lg-3 me-1 mb-0">
                     Wilton , United States
                   </p>
                 </div>
@@ -685,7 +692,7 @@ const Home = () => {
                     <p className="text-dark fw-bold mb-0 pb-0 line-through me-1">
                       $100
                     </p>
-                    <p className="text-primary fw-bold me-lg-4 me-lg-3 me-1 mb-0 price">
+                    <p className="text-primary-color fw-bold me-lg-4 me-lg-3 me-1 mb-0 price">
                       $95
                     </p>
                   </div>
@@ -696,13 +703,9 @@ const Home = () => {
                   className="d-flex align-items-center justify-content-start w-origin ms-3 pb-2 border-end pe-3"
                   style={{ flexShrink: 0, width: "auto" }}
                 >
-                  <img
-                    className="card-icon2 me-2"
-                    src="./assets/clock.svg"
-                    alt=""
-                  />
+                  <img className="card-icon2 me-2" src={clock} alt="" />
                   <div>
-                    <p className="small text-primary fw-bold mb-0 pb-0">
+                    <p className="small text-primary-color fw-bold mb-0 pb-0">
                       Event Time
                     </p>
                     <p className="small mb-0">07: 00 PM</p>
@@ -712,13 +715,9 @@ const Home = () => {
                   className="d-flex align-items-center justify-content-start w-origin ms-3 pb-2"
                   style={{ flexShrink: 0, width: "auto" }}
                 >
-                  <img
-                    className="card-icon2 me-2"
-                    src="./assets/hourglass.svg"
-                    alt=""
-                  />
+                  <img className="card-icon2 me-2" src={hourglass} alt="" />
                   <div>
-                    <p className="small text-primary fw-bold mb-0 pb-0">
+                    <p className="small text-primary-color fw-bold mb-0 pb-0">
                       Event Duration
                     </p>
                     <p className="small mb-0">2Hr 11Min</p>
@@ -732,34 +731,35 @@ const Home = () => {
               </p>
             </div>
           </div>
+        
         </div>
       </div>
       <div className="count-sec">
         <div className="row">
           <div className="col-md-4 text-center pt-4 pb-md-5 pb-0">
             <div className="border-end bottom-line border-primary pb-md-0 pb-4">
-              <h6 className="fw-bold text-primary mb-0">EVENT HOSTED</h6>
-              <p className="mb-0 fs-3 text-primary fw-bold">6067+</p>
+              <h6 className="fw-bold text-primary-color mb-0 animate__animated animate__bounce">EVENT HOSTED</h6>
+              <p className="mb-0 fs-3 text-primary-color fw-bold">6067+</p>
             </div>
           </div>
           <div className="col-md-4 text-center pt-4 pb-md-5 pb-0">
             <div className="border-end bottom-line border-primary pb-md-0 pb-4">
-              <h6 className="fw-bold text-primary mb-0">Ticket Sold</h6>
-              <p className="mb-0 fs-3 text-primary fw-bold">6067+</p>
+              <h6 className="fw-bold text-primary-color mb-0 animate__animated animate__bounce">Ticket Sold</h6>
+              <p className="mb-0 fs-3 text-primary-color fw-bold">6067+</p>
             </div>
           </div>
           <div className="col-md-4 text-center pt-4 pb-md-5 pb-0">
             <div>
-              <h6 className="fw-bold text-primary mb-0">
+              <h6 className="fw-bold text-primary-color mb-0 animate__animated animate__bounce">
                 Partners & Organizers
               </h6>
-              <p className="mb-0 fs-3 text-primary fw-bold">6067+</p>
+              <p className="mb-0 fs-3 text-primary-color fw-bold">6067+</p>
             </div>
           </div>
         </div>
       </div>
       <div className="partner-sec">
-        <h3 className="fw-bold text-primary mb-0 text-center mb-0">
+        <h3 className="fw-bold text-primary-color mb-0 text-center mb-0 animate__animated animate__bounce">
           OUR PARTNER
         </h3>
         <div className="mt-lg-5 mt-4 pt-xl-5 pt-md-2 pt-5 pb-5 d-flex justify-content-center align-items-center">
@@ -784,7 +784,7 @@ const Home = () => {
       </div>
       <div className="newsletter-sec pb-4 position-relative">
         <div className="position-absolute md-absolute news-form">
-          <h5 className="fw-bold text-primary mb-0 pt-2">
+          <h5 className="fw-bold text-primary-color mb-0 pt-2 animate__animated animate__bounce">
             Want to receive events & news and updates?
           </h5>
           <div className="d-flex mt-4 flex-md-row flex-column">
@@ -812,7 +812,7 @@ const Home = () => {
             />
             <label className="form-check-label" for="flexCheckDefault">
               I agree with the{" "}
-              <span className="text-primary">privacy statement</span>
+              <span className="text-primary-color">privacy statement</span>
             </label>
           </div>
           <button className="btn btn-primary text-capitalize py-0 px-0 d-flex rounded-6 align-items-center news-button">

@@ -39,7 +39,7 @@ const Contact = () => {
             <ul className="navbar-nav">
               <li className="nav-item d-flex align-items-center justify-content-start">
                 <a
-                  className="nav-link text-primary pe-1 font-nav"
+                  className="nav-link text-primary-color pe-1 font-nav"
                   href="/"
                 >
                   Home
@@ -47,14 +47,14 @@ const Contact = () => {
                 </a>
               </li>
               <li className="nav-item d-flex align-items-center justify-content-start">
-                <a className="nav-link text-primary pe-1 font-nav" href="/events">
+                <a className="nav-link text-primary-color pe-1 font-nav" href="/events">
                   Events
                   <img className="nav-plus" src={plus} alt="" />
                 </a>
               </li>
               <li className="nav-item d-flex align-items-center justify-content-start">
                 <a
-                  className="nav-link text-primary pe-1 font-nav"
+                  className="nav-link text-primary-color pe-1 font-nav"
                   href="/about"
                 >
                   About Us
@@ -63,7 +63,7 @@ const Contact = () => {
               </li>
               <li className="nav-item d-flex align-items-center justify-content-start">
                 <a
-                  className="nav-link text-primary pe-1 font-nav"
+                  className="nav-link text-primary-color pe-1 font-nav"
                   href="/contact"
                 >
                   Contact Us
@@ -71,13 +71,13 @@ const Contact = () => {
                 </a>
               </li>
               <li className="nav-item border rounded border-primary align-self-start px-2 my-1">
-                <a className="nav-link text-primary pt-1 pb-1p font-nav" href="/events">
+                <a className="nav-link text-primary-color pt-1 pb-1p font-nav" href="/events">
                   List your event
                 </a>
               </li>
               <li className="nav-item d-flex align-items-center justify-content-start">
                 <a
-                  className="nav-link text-primary pe-1 font-nav"
+                  className="nav-link text-primary-color pe-1 font-nav"
                   href="/"
                 >
                   Login/Sign Up
@@ -86,7 +86,7 @@ const Contact = () => {
               </li>
               <li className="nav-item d-flex align-items-center justify-content-start">
                 <a
-                  className="nav-link text-primary pe-1 font-nav"
+                  className="nav-link text-primary-color pe-1 font-nav"
                   href="/"
                 >
                   Location
@@ -97,7 +97,7 @@ const Contact = () => {
           </div>
         </div>
       </nav>
-      <div className="mx-lg-4 my-lg-3 banner bg-primary rounded-8 position-relative">
+      <div className="mx-lg-4 my-lg-3 banner bg-primary-color rounded-8 position-relative">
         <nav className="navbar navbar-expand-lg navbar-white bg-white mx-4 rounded-8 top-10 d-lg-block d-none">
           <div className="container-fluid pe-0">
             <img className="nav-logo ms-lg-5 ms-2" src={Logo} alt="" />
@@ -116,7 +116,7 @@ const Contact = () => {
               <ul className="navbar-nav ms-auto mb-2 mb-lg-0 position-relative">
                 <li className="nav-item d-flex align-items-center justify-content-center me-xl-5 me-3">
                   <a
-                    className="nav-link text-primary pe-1 font-nav"
+                    className="nav-link text-primary-color pe-1 font-nav"
                     href="/"
                   >
                     Home
@@ -124,14 +124,14 @@ const Contact = () => {
                   </a>
                 </li>
                 <li className="nav-item d-flex align-items-center justify-content-center me-xl-5 me-3">
-                  <a className="nav-link text-primary pe-1 font-nav" href="/events">
+                  <a className="nav-link text-primary-color pe-1 font-nav" href="/events">
                     Events
                     <img className="nav-plus" src={plus} alt="" />
                   </a>
                 </li>
                 <li className="nav-item d-flex align-items-center justify-content-center me-xl-5 me-3">
                   <a
-                    className="nav-link text-primary pe-1 font-nav"
+                    className="nav-link text-primary-color pe-1 font-nav"
                     href="/about"
                   >
                     About Us
@@ -140,7 +140,7 @@ const Contact = () => {
                 </li>
                 <li className="nav-item d-flex align-items-center justify-content-center me-xl-5 me-3">
                   <a
-                    className="nav-link text-primary pe-1 font-nav"
+                    className="nav-link text-primary-color pe-1 font-nav"
                     href="/contact"
                   >
                     Contact Us
@@ -148,18 +148,18 @@ const Contact = () => {
                   </a>
                 </li>
                 <li className="nav-item border rounded border-primary align-self-center me-7">
-                  <a className="nav-link text-primary pt-1 pb-1p font-nav" href="/events">
+                  <a className="nav-link text-primary-color pt-1 pb-1p font-nav" href="/events">
                     List your event
                   </a>
                 </li>
                 <li className="nav-item position-absolute end-0 bg-white nav-box me-0 d-flex flex-column justify-content-center align-items-center rounded-8">
-                  <a className="nav-link text-primary pt-1 pb-1p font-nav" href="/">
+                  <a className="nav-link text-primary-color pt-1 pb-1p font-nav" href="/">
                     Login/Sign Up
                   </a>
                   <div className="d-flex align-items-center justify-content-center">
                     <img className="nav-loc" src={location} alt="" />
                     <a
-                      className="nav-link text-primary px-1 font-nav-small"
+                      className="nav-link text-primary-color px-1 font-nav-small"
                       href="#"
                     >
                       Location
@@ -171,7 +171,7 @@ const Contact = () => {
             </div>
           </div>
         </nav>
-        <h1 className="banner-h text-white text-uppercase fw-bold pb-0">
+        <h1 className="banner-h text-white text-uppercase fw-bold pb-0 animate__animated animate__bounce">
           Contact Us
         </h1>
         <div className="banner-child bg-white p-3">
@@ -227,7 +227,7 @@ const Contact = () => {
                   </div>
                 </div>
                 <div className="col-lg-8">
-                  <p className="text-primary fw-bold mb-3">Select Subject?</p>
+                  <p className="text-primary-color fw-bold mb-3">Select Subject?</p>
                   <div className="d-flex flex-md-row flex-column">
                     <div className="form-check me-3">
                       <input
@@ -304,23 +304,23 @@ const Contact = () => {
       <div className="h-200"></div>
       <div className="address-sec banner-child-address py-5">
         <div className="d-flex justify-content-center">
-          <img className="mx-lg-4 mx-2" src={india} alt="" />
-          <img className="mx-lg-4 mx-2" src={singapore} alt="" />
-          <img className="mx-lg-4 mx-2" src={USA} alt="" />
+          <img className="mx-lg-4 mx-2 animate__animated animate__bounce" src={india} alt="" />
+          <img className="mx-lg-4 mx-2 animate__animated animate__bounce"  src={singapore} alt="" />
+          <img className="mx-lg-4 mx-2 animate__animated animate__bounce" src={USA} alt="" />
         </div>
         <div className="contact-sec w-500 m-auto px-5 py-4 mt-4">
           <div>
-            <span className="text-primary text-uppercase fw-bold">Address:</span>
+            <span className="text-primary-color text-uppercase fw-bold">Address:</span>
             <span>
               Office, Vijay Chambers, Grant Road, Mumbai, Maharashtra 400004
             </span>
           </div>
           <div>
-            <span className="text-primary text-uppercase fw-bold">Email</span>
+            <span className="text-primary-color text-uppercase fw-bold">Email</span>
             <span>tixme.tix@gmail.com</span>
           </div>
           <div>
-            <span className="text-primary text-uppercase fw-bold">Phone</span>
+            <span className="text-primary-color text-uppercase fw-bold">Phone</span>
             <span>+91 8080000007 (WhatsApp)</span>
           </div>
         </div>
