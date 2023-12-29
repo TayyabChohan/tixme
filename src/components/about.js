@@ -178,7 +178,7 @@ const About = () => {
             </div>
           </div>
         </nav>
-        <h1 class="banner-h fw-bold text-white text-uppercase mb-0 pb-0 animate__animated animate__bounce">
+        <h1 class="banner-h fw-bold text-white text-uppercase mb-0 pb-0">
           ABout us
         </h1>
         <div class="banner-child bg-white px-0">
@@ -222,7 +222,7 @@ const About = () => {
           </div>
           <div class="col-lg-8">
             <div class="me-lg-4">
-              <span class="text-dark text-capitalize fw-bold animate__animated animate__bounce">
+              <span class="text-dark text-capitalize fw-bold">
                 Silver Tier:
               </span>
               <span>
@@ -257,7 +257,7 @@ const About = () => {
           </div>
           <div class="col-lg-8">
             <div class="me-lg-4">
-              <span class="text-dark text-capitalize fw-bold animate__animated animate__bounce">
+              <span class="text-dark text-capitalize fw-bold">
                 Platinum Tier :
               </span>
               <span>

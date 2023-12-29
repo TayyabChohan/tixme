@@ -12,7 +12,7 @@ const Footer = (props) => {
         <div className="row m-auto w-100">
           <div className="col-lg-5 col-12">
             <div className="mx-footer">
-              <img className="footer-logo animate__animated animate__bounce" src={footerLogo} alt="" />
+              <img className="footer-logo" src={footerLogo} alt="" />
               <p className="text-primary-color mt-4">
                 Welcome to TIXME, where every ticket tells a story! Our mission
                 is to redefine events, making each occasion an unforgettable and
@@ -70,7 +70,7 @@ const Footer = (props) => {
             </div>
           </div>
           <div className="col-lg-3 col-12 d-flex justify-content-center align-items-start flex-column text-center ps-lg-0 ps-4 mt-lg-0 mt-4">
-            <img className="support-img ms-4 mb-1 animate__animated animate__bounce" src={support} alt="" />
+            <img className="support-img ms-4 mb-1" src={support} alt="" />
             <h6 className="fw-bold text-primary-color mb-0">24/7 CUSTOMER CARE</h6>
           </div>
         </div>

@@ -169,7 +169,7 @@ const Faqs = () => {
             </div>
           </div>
         </nav>
-        <h1 className="banner-h text-white text-uppercase fw-bold mb-0 pb-0 animate__animated animate__bounce">
+        <h1 className="banner-h text-white text-uppercase fw-bold mb-0 pb-0">
           FAQ’s
         </h1>
         <div className="banner-child bg-white">

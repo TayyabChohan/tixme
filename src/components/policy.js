@@ -168,7 +168,7 @@ const policy = () => {
             </div>
           </div>
         </nav>
-        <h1 class="banner-h text-white text-uppercase fw-bold animate__animated animate__bounce">
+        <h1 class="banner-h text-white text-uppercase fw-bold">
           Privacy policy
         </h1>
       </div>

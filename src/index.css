@@ -180,8 +180,8 @@ select {
 }
 .fade {
   background: linear-gradient(to bottom, #fff, transparent);
-  position: absolute;
-  top: 0;
+  /* position: absolute;
+  top: 0; */
   height: 80px;
   width: 180px;
 }
@@ -278,10 +278,42 @@ select {
   background-repeat: no-repeat;
 }
 .partner-img {
-  height: 30px;
+  width: 150px !important;
+  height: auto; /* Adjust as needed */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .partner-img.tui {
-  height: 50px;
+  height: 50px !important;
+  width: 150px !important;
+}
+.partner-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%; /* Ensure circular images */
+}
+.slick-slide.custom-width {
+  width: auto !important; /* Set the width to 150px, !important is used to override inline styles */
+}
+@media screen and (max-width: 768px) {
+  .carousel-container {
+    margin-top: 30px;
+  }
+
+  .partner-img {
+    width: 100px; /* Decreased width to 100px for tablets */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .carousel-container {
+    margin-top: 20px;
+  }
+
+  .partner-img {
+    width: 80px; /* Decreased width to 80px for mobile */
+  }
 }
 
 /* newsletter section */
@@ -295,12 +327,16 @@ select {
   left: 20%;
   top: 40%;
 }
+.slick-slide .slick-center{
+  width: 150px !important;
+}
 .bg-ligh-blue {
   background-color: #6495ed;
 }
 .news-button {
   height: 40px;
   width: 200px;
+  background:  #003b8f !important;;
 }
 
 /* footer */
@@ -347,12 +383,18 @@ footer span {
 }
 
 /*-----contact-us------------*/
-
+.react-tabs__tab-list{
+  border-bottom: 1px solid #aaa;
+  margin: 0 282px 0px !important;
+  padding: 0;
+}
 .contact-sec {
   background: url(./assets/contactFormBg.png) top center;
   background-size: cover;
   background-repeat: no-repeat;
+  
 }
+
 label {
   color: #003b8f;
   font-size: 14px;
@@ -376,6 +418,20 @@ input:focus {
 }
 .address-sec img {
   height: 70px;
+  width: 150px !important;
+}
+.react-tabs__tab{
+  outline: none !important;
+}
+.react-tabs__tab {
+  display: inline-block;
+  border: none;
+  border-bottom: none;
+  bottom: -1px;
+  /* position: relative; */
+  list-style: none;
+  padding: 6px 12px;
+  cursor: pointer;
 }
 .w-500 {
   width: 590px;
@@ -410,6 +466,18 @@ input:focus {
   .banner-h2 {
     margin: 0 2rem;
     display: block;
+  }
+  @keyframes flipAnimation {
+    0%, 100% {
+      transform: perspective(400px) rotateX(0deg);
+    }
+    50% {
+      transform: perspective(400px) rotateX(180deg);
+    }
+  }
+  
+  .flip {
+    animation: flipAnimation 1s ease-in-out infinite;
   }
   .mx-head {
     margin: 0rem 2rem;
